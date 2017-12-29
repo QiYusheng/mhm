@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<style>
+			body{
+				background-color: #333;
+				transform: skew(0,-17deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="animation"></div>
+    		<script type="text/javascript" src="js/lottie.js" ></script>
+		
+		<script>
+			var animation=document.getElementById('animation');
+			var animation1 = lottie.loadAnimation({
+  				container: animation,
+  				renderer: 'svg',
+  				loop: false,
+  				autoplay: false,
+  				path: 'hello1.json'
+			});
+			
+				animation1.play(); 
+			
+			
+        //bodymovin.js的完整api文档见GitHub项目首页(https://github.com/bodymovin/bodymovin)
+    </script>
+
+	</body>
+</html>
